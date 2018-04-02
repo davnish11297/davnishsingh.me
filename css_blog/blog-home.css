@@ -1,0 +1,26 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.brooks {
+  position: relative;
+  font-family: 'Sanchez', serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-style: italic;
+  &:before {
+      content: '\201C';
+      position: absolute;
+      top: 0.25em;
+      left: -0.15em;
+      color: darken($white, 7%);
+      font-size: 6em;
+      z-index: -1;
+   }
+}
